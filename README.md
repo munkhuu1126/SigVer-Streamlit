@@ -10,4 +10,15 @@ Just download the required libraries as mentioned below:
 ```
 pip install -r requirements.txt
 ```
-** IMPORTANT ** torch may be installed as cpu version. ** YOU NEED CUDA VERSION **
+**IMPORTANT** torch may be installed as cpu version. **YOU NEED CUDA VERSION**
+
+## Model
+Model is uploaded on Huggingface.co since I don't where else should I upload my model. If I uploaded it to any other file hosting services, i could lose my account on that file hosting service due to my carelessness or file hosting service straight up delete it.
+
+- [SVGG16 model](https://huggingface.co/erik1126/Enet)
+
+## Running the application
+
+1. Upload the model to the folder
+2. Install the libs mentioned above
+3. Then `streamlit run main.py` or `python -m streamlit run main.py`. Both works.
