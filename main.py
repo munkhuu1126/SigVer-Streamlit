@@ -8,6 +8,7 @@ import matplotlib.pyplot as plt
 import torch.nn.functional as F
 from torchvision import transforms
 import numpy as np
+from pathlib import Path
 
 my_file = Path("SVGG.pt")
 if my_file.is_file():
