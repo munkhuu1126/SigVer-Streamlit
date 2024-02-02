@@ -49,6 +49,7 @@ if my_file.is_file():
             output1, output2 = model(input1.unsqueeze(0).cuda(), input2.unsqueeze(0).cuda())
             euclidean_distance = F.pairwise_distance(output1, output2)
             st.write("Euclidean Distance: {}".format(euclidean_distance.item()))
+            st.write(f"Result is: **:{'green' if euclidean_distance.item() < 0.0096 else 'red'}[{'Forged' if euclidean_distance.item() > 0.0096 else 'Original' }]**")
             st.write("If ED is less than 0.0096, It's a non-forged signature")
 else:
         st.write("Please upload the SVGG model to continue. Refer to README.md")
